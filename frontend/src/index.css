@@ -4,4 +4,23 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: var(--font-main);
+}
+
+:root {
+	/* Colors */
+	--main-color: #000000;
+	--red-color: #c51212;
+	--yellow-color: #e7b80d;
+	--white-color: #ffffff;
+
+	/* Fonts */
+	--font-main: "Montserrat", sans-serif;
+	--font-size-basic: 62.5%
+
+	/* Border */
+	--border-radius-basic: 8px;
+
+
+
 }

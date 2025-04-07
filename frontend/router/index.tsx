@@ -14,8 +14,28 @@ export const router = createBrowserRouter([
 				element: <MainPage />,
 			},
 			{
-				path: "/register",
+				path: "/rejestracja",
 				element: <RegisterUser />,
+			},
+			{
+				path: "/aktualnosci",
+				element: <MainPage />,
+			},
+			{
+				path: "/sklad",
+				element: <MainPage />,
+			},
+			{
+				path: "/akademia",
+				element: <MainPage />,
+			},
+			{
+				path: "/historia",
+				element: <MainPage />,
+			},
+			{
+				path: "/kontakt",
+				element: <MainPage />,
 			},
 		],
 	},

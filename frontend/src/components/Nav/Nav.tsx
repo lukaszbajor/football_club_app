@@ -7,8 +7,13 @@ export function Nav() {
 		<ul className={styles.nav}>
 			{MENU_POSITIONS.map((link) => {
 				return (
-					<li key={link}>
-						<NavLink to="#">{link}</NavLink>
+					<li key={link.name} className={styles.link}>
+						<NavLink
+							to={link.path}
+							// className={({ isActive }) => (isActive ? styles.active : "")}
+						>
+							{link.name}
+						</NavLink>
 					</li>
 				);
 			})}
