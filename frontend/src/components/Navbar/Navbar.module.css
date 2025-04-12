@@ -13,5 +13,35 @@
 	position: relative;
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 1.2rem;
+}
+.navigationBtns {
+	display: none;
+	margin: 0 1rem;
+	font-size: 1.4rem;
+}
+.hamburger {
+	font-size: 2rem;
+	padding: 0.5rem;
+}
+.navigationBtns,
+.hamburger {
+	background: none;
+	border: none;
+
+	color: var(--gray-color);
+	transition: color 0.3s;
+}
+
+@media (min-width: 992px) {
+	.navigationBtns {
+		display: unset;
+		cursor: pointer;
+	}
+	.hamburger {
+		display: none;
+	}
+	.navigationBtns:hover {
+		color: var(--yellow-color);
+	}
 }
