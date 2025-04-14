@@ -33,6 +33,18 @@
 	transition: color 0.3s;
 }
 
+@keyframes close-icon-rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(180deg);
+	}
+}
+.closeBtn {
+	animation: close-icon-rotate 0.3s;
+}
+
 @media (min-width: 992px) {
 	.navigationBtns {
 		display: unset;

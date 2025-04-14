@@ -17,6 +17,10 @@ export function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 	const [isDesktop, setIsDesktop] = useState(window.innerWidth > 992);
 
+	function handleCloseMenu() {
+		setIsMenuOpen((prev) => !prev);
+	}
+
 	useEffect(() => {
 		function handleResize() {
 			const isNowDesktop = window.innerWidth > 992;
@@ -33,7 +37,9 @@ export function Navbar() {
 		<div className={styles.wrapper}>
 			<div className={styles.navbar}>
 				<Logo />
-				{(isDesktop || isMenuOpen) && <Nav />}
+				{(isDesktop || isMenuOpen) && (
+					<Nav onHandleCloseMenu={handleCloseMenu} />
+				)}
 				<div className={styles.buttons}>
 					<Button
 						onClick={() => console.log("Logowanie")}
@@ -53,7 +59,10 @@ export function Navbar() {
 							setIsMenuOpen((prev) => !prev);
 						}}
 					>
-						<FontAwesomeIcon icon={isMenuOpen ? faX : faBars} />
+						<FontAwesomeIcon
+							icon={isMenuOpen ? faX : faBars}
+							className={faX && isMenuOpen ? styles.closeBtn : ""}
+						/>
 					</Button>
 				</div>
 			</div>

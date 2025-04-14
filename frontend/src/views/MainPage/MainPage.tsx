@@ -1,7 +1,9 @@
+import { FlexContainer } from "../../components/FlexContainer/FlexContainter";
+
 export function MainPage() {
 	return (
-		<div>
+		<FlexContainer>
 			<p>Strona główna!</p>
-		</div>
+		</FlexContainer>
 	);
 }

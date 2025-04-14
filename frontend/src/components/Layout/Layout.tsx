@@ -5,8 +5,8 @@ import { Navbar } from "../Navbar/Navbar";
 export function Layout() {
 	return (
 		<>
+			<Navbar />
 			<MainContent>
-				<Navbar />
 				<Outlet />
 			</MainContent>
 		</>
