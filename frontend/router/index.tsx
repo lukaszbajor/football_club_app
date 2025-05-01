@@ -3,6 +3,7 @@ import { Layout } from "../src/components/Layout/Layout";
 import { AdminLayout } from "../src/components/AdminLayout/AdminLayout";
 import { RegisterUser } from "../src/views/RegisterUser/RegisterUser";
 import { MainPage } from "../src/views/MainPage/MainPage";
+import { NewsPage } from "../src/views/NewsPage/NewsPage";
 
 export const router = createBrowserRouter([
 	{
@@ -19,7 +20,7 @@ export const router = createBrowserRouter([
 			},
 			{
 				path: "/aktualnosci",
-				element: <MainPage />,
+				element: <NewsPage />,
 			},
 			{
 				path: "/sklad",
