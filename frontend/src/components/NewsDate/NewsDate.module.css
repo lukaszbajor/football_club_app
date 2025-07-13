@@ -1,10 +1,3 @@
-.mainNews {
-	padding: 1em;
-	margin: 1em;
-	border: 1px solid gray;
-	border-radius: 8px;
-	min-height: 25em;
-}
 .date {
 	display: flex;
 	flex-direction: column;
@@ -17,4 +10,8 @@
 .date hr {
 	width: 80%;
 	color: gray;
+}
+.numberOfDay,
+.month {
+	padding: 0.3em;
 }

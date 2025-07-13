@@ -6,6 +6,7 @@ import { Button } from "../UI/Button/Button";
 import { MainNews } from "../MainNews/MainNews";
 import { NewsItem } from "../../types";
 import { useNavigate } from "react-router-dom";
+import { NewsDate } from "../NewsDate/NewsDate";
 
 const newsList: NewsItem[] = [
 	{
@@ -52,14 +53,14 @@ export function News() {
 				{newsList.map(
 					(news) =>
 						!news.isMain && (
-							<div key={news.id}>
-								<div>Data</div>
+							<div className={styles.news} key={news.id}>
+								<NewsDate />
 								<Link to="#">{news.title}</Link>
 							</div>
 						)
 				)}
-				<Button onClick={() => navigate("/aktualnosci")}>Więcej</Button>
 			</div>
+			<Button className={styles.btnMore} onClick={() => navigate("/aktualnosci") }>Więcej</Button>
 		</FlexContainer>
 	);
 }

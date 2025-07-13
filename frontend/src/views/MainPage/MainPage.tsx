@@ -5,8 +5,8 @@ import { News } from "../../components/News/News";
 export function MainPage() {
 	return (
 		<FlexContainer>
-			<News />
-			<FlexContainer>
+			<FlexContainer className="separateBlocks">
+				<News />
 				<AsideBlocks />
 			</FlexContainer>
 		</FlexContainer>
