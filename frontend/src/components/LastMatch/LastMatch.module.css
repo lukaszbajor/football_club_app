@@ -1,0 +1,5 @@
+.lastMatch {
+	padding: 1em;
+	border: 1px solid var(--red-color);
+	border-radius: 8px;
+}
